@@ -57,7 +57,7 @@ export class AuthController {
       entityName: req.user.name,
       operationType: operationType.LOGIN,
       valueBefore: null,
-      valueAfter: payload,
+      valueAfter: {accessToken: payload.accessToken},
       ref: {},
       owner: req.user.id,
       org: req.user.org.id,
